@@ -1,0 +1,12 @@
+### POST asynchronous Action
+POST http://localhost:4004/odata/v4/service/demo/v4asyncAction
+Prefer: respond-async
+Content-Type: application/json;charset=UTF-8
+
+{
+  "ID": "12345"
+}
+
+
+### GET status of async call
+GET http://localhost:4004/odata/v4/service/demo/ActionStatus(37469d2f-f020-414c-aaec-2ed302f04dab)
